@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#050B14"/>
+      <stop offset="30%" stop-color="#030810"/>
+      <stop offset="100%" stop-color="#010306"/>
+    </linearGradient>
+    <radialGradient id="nebula" cx="70%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="rgba(56,189,248,0.06)"/>
+      <stop offset="40%" stop-color="rgba(74,222,128,0.02)"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <radialGradient id="nebula2" cx="20%" cy="60%" r="40%">
+      <stop offset="0%" stop-color="rgba(139,92,246,0.04)"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <filter id="starGlow">
+      <feGaussianBlur stdDeviation="1.5"/>
+    </filter>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <rect width="1920" height="1080" fill="url(#nebula)"/>
+  <rect width="1920" height="1080" fill="url(#nebula2)"/>
+  <g filter="url(#starGlow)" opacity="0.8">
+    <circle cx="120" cy="80" r="1.5" fill="#38BDF8"/>
+    <circle cx="340" cy="150" r="1" fill="#F8FAFC"/>
+    <circle cx="560" cy="60" r="2" fill="#4ADE80"/>
+    <circle cx="780" cy="200" r="1" fill="#38BDF8"/>
+    <circle cx="920" cy="90" r="1.5" fill="#F8FAFC"/>
+    <circle cx="1100" cy="180" r="0.8" fill="#4ADE80"/>
+    <circle cx="1300" cy="70" r="1.8" fill="#38BDF8"/>
+    <circle cx="1500" cy="140" r="1" fill="#F8FAFC"/>
+    <circle cx="1700" cy="50" r="1.3" fill="#4ADE80"/>
+    <circle cx="1850" cy="220" r="0.8" fill="#38BDF8"/>
+    <circle cx="200" cy="300" r="1" fill="#F8FAFC"/>
+    <circle cx="480" cy="420" r="0.8" fill="#4ADE80"/>
+    <circle cx="650" cy="350" r="1.2" fill="#38BDF8"/>
+    <circle cx="840" cy="480" r="0.6" fill="#F8FAFC"/>
+    <circle cx="1050" cy="380" r="1" fill="#4ADE80"/>
+    <circle cx="1250" cy="450" r="0.8" fill="#38BDF8"/>
+    <circle cx="1450" cy="320" r="1.4" fill="#F8FAFC"/>
+    <circle cx="1650" cy="400" r="0.7" fill="#4ADE80"/>
+    <circle cx="1820" cy="360" r="1" fill="#38BDF8"/>
+    <circle cx="430" cy="620" r="0.6" fill="#F8FAFC"/>
+    <circle cx="720" cy="700" r="0.8" fill="#4ADE80"/>
+    <circle cx="980" cy="580" r="1" fill="#38BDF8"/>
+    <circle cx="1350" cy="650" r="0.5" fill="#F8FAFC"/>
+    <circle cx="1600" cy="550" r="0.9" fill="#4ADE80"/>
+    <circle cx="520" cy="830" r="0.6" fill="#38BDF8"/>
+    <circle cx="880" cy="900" r="0.7" fill="#F8FAFC"/>
+    <circle cx="1150" cy="850" r="0.5" fill="#4ADE80"/>
+    <circle cx="1700" cy="780" r="0.8" fill="#38BDF8"/>
+  </g>
+  <g opacity="0.08">
+    <circle cx="960" cy="540" r="300" fill="none" stroke="#38BDF8" stroke-width="0.5"/>
+    <circle cx="960" cy="540" r="200" fill="none" stroke="#4ADE80" stroke-width="0.3"/>
+    <circle cx="960" cy="540" r="400" fill="none" stroke="#38BDF8" stroke-width="0.2"/>
+  </g>
+  <path d="M0 950 Q150 920 300 940 Q450 960 600 930 Q750 900 900 935 Q1050 970 1200 940 Q1350 910 1500 945 Q1650 980 1800 950 Q1900 930 1920 940 L1920 1080 L0 1080Z" fill="rgba(56,189,248,0.02)"/>
+  <path d="M0 1010 Q200 980 400 1000 Q600 1020 800 990 Q1000 960 1200 995 Q1400 1030 1600 1000 Q1800 970 1920 990 L1920 1080 L0 1080Z" fill="rgba(3,11,22,0.4)"/>
+</svg>

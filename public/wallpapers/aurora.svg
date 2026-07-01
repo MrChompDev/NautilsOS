@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#020810"/>
+      <stop offset="30%" stop-color="#06121E"/>
+      <stop offset="70%" stop-color="#0A2342"/>
+      <stop offset="100%" stop-color="#030B16"/>
+    </linearGradient>
+    <linearGradient id="aurora1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="rgba(74,222,128,0.06)"/>
+      <stop offset="50%" stop-color="rgba(56,189,248,0.04)"/>
+      <stop offset="100%" stop-color="rgba(74,222,128,0.02)"/>
+    </linearGradient>
+    <linearGradient id="aurora2" x1="0" y1="0.3" x2="1" y2="0.7">
+      <stop offset="0%" stop-color="rgba(139,92,246,0.05)"/>
+      <stop offset="50%" stop-color="rgba(74,222,128,0.04)"/>
+      <stop offset="100%" stop-color="rgba(56,189,248,0.03)"/>
+    </linearGradient>
+    <linearGradient id="aurora3" x1="0" y1="0.5" x2="1" y2="0">
+      <stop offset="0%" stop-color="rgba(56,189,248,0.04)"/>
+      <stop offset="50%" stop-color="rgba(139,92,246,0.03)"/>
+      <stop offset="100%" stop-color="rgba(74,222,128,0.05)"/>
+    </linearGradient>
+    <filter id="auroraBlur">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+    <filter id="auroraBlur2">
+      <feGaussianBlur stdDeviation="25"/>
+    </filter>
+    <filter id="starGlow">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <g filter="url(#auroraBlur)" opacity="0.7">
+    <path d="M-100 300 Q200 100 500 250 Q800 400 1100 200 Q1400 0 1700 200 Q1900 350 2000 250 L2000 600 Q1700 700 1400 550 Q1100 400 800 600 Q500 800 200 550 Q0 400 -100 500Z" fill="url(#aurora1)"/>
+  </g>
+  <g filter="url(#auroraBlur2)" opacity="0.5">
+    <path d="M-50 450 Q300 250 600 400 Q900 550 1200 350 Q1500 150 1800 350 Q2000 500 2050 400 L2050 700 Q1800 800 1500 650 Q1200 500 900 700 Q600 900 300 650 Q100 500 -50 600Z" fill="url(#aurora2)"/>
+  </g>
+  <g filter="url(#auroraBlur)" opacity="0.4">
+    <path d="M100 200 Q400 50 700 180 Q1000 310 1300 150 Q1600 -10 1900 150 Q2100 280 2200 180 L2200 450 Q1900 520 1600 400 Q1300 280 1000 450 Q700 620 400 420 Q200 300 100 380Z" fill="url(#aurora3)"/>
+  </g>
+  <g filter="url(#starGlow)" opacity="0.9">
+    <circle cx="150" cy="60" r="1.5" fill="#F8FAFC"/>
+    <circle cx="380" cy="120" r="1" fill="#38BDF8"/>
+    <circle cx="550" cy="40" r="2" fill="#F8FAFC"/>
+    <circle cx="720" cy="180" r="0.8" fill="#4ADE80"/>
+    <circle cx="900" cy="80" r="1.3" fill="#F8FAFC"/>
+    <circle cx="1080" cy="160" r="1" fill="#38BDF8"/>
+    <circle cx="1250" cy="50" r="1.8" fill="#F8FAFC"/>
+    <circle cx="1420" cy="130" r="0.7" fill="#4ADE80"/>
+    <circle cx="1600" cy="70" r="1.2" fill="#F8FAFC"/>
+    <circle cx="1780" cy="190" r="0.9" fill="#38BDF8"/>
+    <circle cx="280" cy="280" r="0.6" fill="#F8FAFC"/>
+    <circle cx="650" cy="350" r="0.8" fill="#4ADE80"/>
+    <circle cx="1000" cy="300" r="1" fill="#38BDF8"/>
+    <circle cx="1350" cy="380" r="0.5" fill="#F8FAFC"/>
+    <circle cx="1650" cy="290" r="0.7" fill="#4ADE80"/>
+  </g>
+  <path d="M0 990 Q150 960 300 980 Q450 1000 600 975 Q750 950 900 985 Q1050 1020 1200 990 Q1350 960 1500 985 Q1650 1010 1800 980 Q1900 960 1920 970 L1920 1080 L0 1080Z" fill="rgba(3,11,22,0.35)"/>
+  <path d="M0 1030 Q200 1010 400 1025 Q600 1040 800 1015 Q1000 990 1200 1020 Q1400 1050 1600 1025 Q1800 1000 1920 1025 L1920 1080 L0 1080Z" fill="rgba(3,11,22,0.15)"/>
+</svg>

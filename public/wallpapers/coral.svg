@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0A2342"/>
+      <stop offset="35%" stop-color="#0D2B4A"/>
+      <stop offset="65%" stop-color="#153555"/>
+      <stop offset="100%" stop-color="#1A3D5C"/>
+    </linearGradient>
+    <radialGradient id="warmth" cx="50%" cy="60%" r="50%">
+      <stop offset="0%" stop-color="rgba(244,114,182,0.05)"/>
+      <stop offset="50%" stop-color="rgba(244,114,182,0.02)"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <radialGradient id="light" cx="50%" cy="10%" r="60%">
+      <stop offset="0%" stop-color="rgba(56,189,248,0.08)"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <linearGradient id="coral1" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#F472B6"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </linearGradient>
+    <linearGradient id="coral2" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#FB923C"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </linearGradient>
+    <linearGradient id="coral3" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#2DD4BF"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </linearGradient>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <rect width="1920" height="1080" fill="url(#light)"/>
+  <rect width="1920" height="1080" fill="url(#warmth)"/>
+  <g filter="url(#soft)" opacity="0.6">
+    <ellipse cx="300" cy="900" rx="200" ry="120" fill="url(#coral1)"/>
+    <ellipse cx="900" cy="950" rx="250" ry="100" fill="url(#coral2)"/>
+    <ellipse cx="1500" cy="920" rx="180" ry="110" fill="url(#coral3)"/>
+    <ellipse cx="600" cy="1000" rx="150" ry="80" fill="url(#coral1)"/>
+    <ellipse cx="1200" cy="980" rx="200" ry="90" fill="url(#coral2)"/>
+    <ellipse cx="1700" cy="1020" rx="160" ry="70" fill="url(#coral3)"/>
+  </g>
+  <g opacity="0.08">
+    <path d="M200 1080 Q220 950 240 900 Q260 850 280 950 Q300 1050 320 1080" fill="none" stroke="#F472B6" stroke-width="2"/>
+    <path d="M220 1080 Q240 930 260 870 Q280 810 300 930 Q320 1050 340 1080" fill="none" stroke="#FB923C" stroke-width="1.5"/>
+    <path d="M800 1080 Q820 940 840 880 Q860 820 880 940 Q900 1060 920 1080" fill="none" stroke="#2DD4BF" stroke-width="2"/>
+    <path d="M820 1080 Q840 910 860 850 Q880 790 900 910 Q920 1030 940 1080" fill="none" stroke="#F472B6" stroke-width="1.5"/>
+    <path d="M1400 1080 Q1420 960 1440 900 Q1460 840 1480 950 Q1500 1060 1520 1080" fill="none" stroke="#FB923C" stroke-width="1.8"/>
+    <path d="M1420 1080 Q1440 920 1460 860 Q1480 800 1500 920 Q1520 1040 1540 1080" fill="none" stroke="#2DD4BF" stroke-width="1.5"/>
+  </g>
+  <g opacity="0.15">
+    <circle cx="350" cy="500" r="1" fill="#4ADE80"/>
+    <circle cx="550" cy="400" r="0.8" fill="#F472B6"/>
+    <circle cx="750" cy="650" r="1.2" fill="#38BDF8"/>
+    <circle cx="950" cy="350" r="0.6" fill="#4ADE80"/>
+    <circle cx="1150" cy="550" r="1" fill="#FB923C"/>
+    <circle cx="1350" cy="450" r="0.8" fill="#38BDF8"/>
+    <circle cx="1550" cy="600" r="1" fill="#F472B6"/>
+    <circle cx="1750" cy="380" r="0.7" fill="#2DD4BF"/>
+  </g>
+  <path d="M0 970 Q200 950 400 965 Q600 980 800 955 Q1000 930 1200 960 Q1400 990 1600 965 Q1800 940 1920 970 L1920 1080 L0 1080Z" fill="rgba(3,11,22,0.3)"/>
+  <path d="M0 1020 Q250 1000 500 1015 Q750 1030 1000 1005 Q1250 980 1500 1010 Q1750 1040 1920 1015 L1920 1080 L0 1080Z" fill="rgba(3,11,22,0.2)"/>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0A2342"/>
+      <stop offset="40%" stop-color="#0A1F3A"/>
+      <stop offset="70%" stop-color="#07162B"/>
+      <stop offset="100%" stop-color="#030B16"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="50%" cy="15%" r="60%">
+      <stop offset="0%" stop-color="rgba(56,189,248,0.12)"/>
+      <stop offset="50%" stop-color="rgba(56,189,248,0.04)"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <linearGradient id="ray1" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stop-color="rgba(56,189,248,0.08)"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </linearGradient>
+    <linearGradient id="ray2" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="rgba(56,189,248,0.05)"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </linearGradient>
+    <linearGradient id="ray3" x1="0" y1="0" x2="0.7" y2="1">
+      <stop offset="0%" stop-color="rgba(74,222,128,0.04)"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#sky)"/>
+  <rect width="1920" height="1080" fill="url(#sun)"/>
+  <polygon points="200,0 600,1080 0,1080" fill="url(#ray1)" opacity="0.6"/>
+  <polygon points="600,0 1100,1080 400,1080" fill="url(#ray2)" opacity="0.5"/>
+  <polygon points="1100,0 1600,1080 900,1080" fill="url(#ray1)" opacity="0.4"/>
+  <polygon points="1500,0 1920,1080 1300,1080" fill="url(#ray3)" opacity="0.5"/>
+  <g opacity="0.15" filter="url(#glow)">
+    <circle cx="300" cy="200" r="1.5" fill="#4ADE80"/>
+    <circle cx="450" cy="350" r="1" fill="#4ADE80"/>
+    <circle cx="700" cy="180" r="1.2" fill="#38BDF8"/>
+    <circle cx="900" cy="400" r="0.8" fill="#4ADE80"/>
+    <circle cx="1100" cy="250" r="1.5" fill="#38BDF8"/>
+    <circle cx="1300" cy="150" r="1" fill="#4ADE80"/>
+    <circle cx="1500" cy="300" r="0.8" fill="#38BDF8"/>
+    <circle cx="1700" cy="220" r="1.2" fill="#4ADE80"/>
+    <circle cx="250" cy="500" r="1" fill="#38BDF8"/>
+    <circle cx="600" cy="550" r="0.8" fill="#4ADE80"/>
+    <circle cx="1000" cy="480" r="1.2" fill="#38BDF8"/>
+    <circle cx="1400" cy="520" r="1" fill="#4ADE80"/>
+    <circle cx="1800" cy="450" r="0.8" fill="#38BDF8"/>
+  </g>
+  <path d="M0 1000 Q200 960 400 990 Q600 1020 800 980 Q1000 940 1200 970 Q1400 1000 1600 965 Q1800 930 1920 960 L1920 1080 L0 1080Z" fill="rgba(3,11,22,0.3)"/>
+  <path d="M0 1030 Q250 1000 500 1020 Q750 1040 1000 1005 Q1250 970 1500 1010 Q1750 1050 1920 1015 L1920 1080 L0 1080Z" fill="rgba(3,11,22,0.5)"/>
+</svg>

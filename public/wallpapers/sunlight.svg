@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0F3B5E"/>
+      <stop offset="25%" stop-color="#0D2B4A"/>
+      <stop offset="55%" stop-color="#0A1F3A"/>
+      <stop offset="100%" stop-color="#06121E"/>
+    </linearGradient>
+    <radialGradient id="sunCenter" cx="50%" cy="5%" r="40%">
+      <stop offset="0%" stop-color="rgba(251,191,36,0.15)"/>
+      <stop offset="30%" stop-color="rgba(251,191,36,0.05)"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <linearGradient id="rayGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(251,191,36,0.06)"/>
+      <stop offset="30%" stop-color="rgba(251,191,36,0.02)"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </linearGradient>
+    <linearGradient id="waveGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(56,189,248,0.04)"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </linearGradient>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="1.5"/>
+    </filter>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <rect width="1920" height="1080" fill="url(#sunCenter)"/>
+  <g opacity="0.7">
+    <polygon points="960,0 300,1080 0,1080" fill="url(#rayGrad)"/>
+    <polygon points="960,0 700,1080 400,1080" fill="url(#rayGrad)"/>
+    <polygon points="960,0 1100,1080 800,1080" fill="url(#rayGrad)"/>
+    <polygon points="960,0 1500,1080 1200,1080" fill="url(#rayGrad)"/>
+    <polygon points="960,0 1920,1080 1600,1080" fill="url(#rayGrad)"/>
+    <polygon points="960,0 200,1080 0,1080" fill="url(#rayGrad)"/>
+  </g>
+  <g filter="url(#softGlow)" opacity="0.12">
+    <circle cx="960" cy="50" r="4" fill="#FBBF24"/>
+    <circle cx="960" cy="50" r="15" fill="#FBBF24" opacity="0.3"/>
+    <circle cx="960" cy="50" r="30" fill="#FBBF24" opacity="0.1"/>
+  </g>
+  <g opacity="0.12">
+    <path d="M0 350 Q100 340 200 355 Q300 370 400 350 Q500 330 600 345 Q700 360 800 340 Q900 320 1000 345 Q1100 370 1200 350 Q1300 330 1400 345 Q1500 360 1600 340 Q1700 320 1800 345 Q1900 360 1920 350" fill="none" stroke="#38BDF8" stroke-width="0.5" opacity="0.3"/>
+    <path d="M0 500 Q150 490 300 505 Q450 520 600 495 Q750 470 900 500 Q1050 530 1200 505 Q1350 480 1500 500 Q1650 520 1800 495 Q1900 480 1920 490" fill="none" stroke="#38BDF8" stroke-width="0.5" opacity="0.2"/>
+  </g>
+  <g opacity="0.1" filter="url(#softGlow)">
+    <circle cx="200" cy="250" r="0.8" fill="#4ADE80"/>
+    <circle cx="450" cy="180" r="1" fill="#38BDF8"/>
+    <circle cx="700" cy="300" r="0.6" fill="#4ADE80"/>
+    <circle cx="950" cy="220" r="0.8" fill="#38BDF8"/>
+    <circle cx="1200" cy="280" r="1" fill="#4ADE80"/>
+    <circle cx="1450" cy="190" r="0.7" fill="#38BDF8"/>
+    <circle cx="1700" cy="320" r="0.9" fill="#4ADE80"/>
+  </g>
+  <path d="M0 950 Q200 920 400 940 Q600 960 800 930 Q1000 900 1200 935 Q1400 970 1600 945 Q1800 920 1920 950 L1920 1080 L0 1080Z" fill="rgba(3,11,22,0.3)"/>
+  <path d="M0 1000 Q250 980 500 995 Q750 1010 1000 985 Q1250 960 1500 990 Q1750 1020 1920 995 L1920 1080 L0 1080Z" fill="rgba(3,11,22,0.4)"/>
+  <path d="M0 1040 Q200 1025 400 1035 Q600 1045 800 1020 Q1000 995 1200 1025 Q1400 1055 1600 1035 Q1800 1015 1920 1035 L1920 1080 L0 1080Z" fill="rgba(3,11,22,0.3)"/>
+</svg>

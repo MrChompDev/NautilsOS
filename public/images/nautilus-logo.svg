@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="shellGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#4ADE80"/>
+    </linearGradient>
+    <linearGradient id="shellGrad2" x1="100%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#4ADE80"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(56,189,248,0.2)"/>
+      <stop offset="100%" stop-color="rgba(74,222,128,0.05)"/>
+    </linearGradient>
+    <radialGradient id="eyeGrad" cx="30%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </radialGradient>
+    <filter id="shellGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="outerGlow">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+
+  <!-- Outer glow ring -->
+  <circle cx="200" cy="200" r="180" fill="none" stroke="url(#glowGrad)" stroke-width="1" opacity="0.5" filter="url(#outerGlow)"/>
+  <circle cx="200" cy="200" r="190" fill="none" stroke="rgba(56,189,248,0.03)" stroke-width="0.5"/>
+
+  <!-- Nautilus shell spiral - outer -->
+  <path d="M200 60 C280 60 340 120 340 200 C340 280 280 340 200 340 C120 340 60 280 60 200 C60 160 78 124 108 100"
+        fill="none" stroke="url(#shellGrad)" stroke-width="8" stroke-linecap="round" opacity="0.25" filter="url(#shellGlow)"/>
+
+  <!-- Nautilus shell - main spiral body -->
+  <path d="M200 80 C270 80 320 130 320 200 C320 270 270 320 200 320 C130 320 80 270 80 200 C80 155 105 116 140 98"
+        fill="none" stroke="url(#shellGrad)" stroke-width="6" stroke-linecap="round" filter="url(#shellGlow)"/>
+
+  <!-- Inner spiral chamber 1 -->
+  <path d="M200 110 C252 110 290 148 290 200 C290 252 252 290 200 290 C148 290 110 252 110 200 C110 166 132 138 158 122"
+        fill="none" stroke="url(#shellGrad2)" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Inner spiral chamber 2 -->
+  <path d="M200 140 C238 140 266 168 266 200 C266 232 238 260 200 260 C168 260 140 232 140 200 C140 182 156 168 174 158"
+        fill="none" stroke="url(#shellGrad)" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- Inner spiral chamber 3 (core) -->
+  <path d="M200 170 C222 170 238 186 238 200 C238 214 222 230 200 230 C182 230 168 216 168 200 C168 192 176 184 184 180"
+        fill="none" stroke="url(#shellGrad2)" stroke-width="3" stroke-linecap="round" opacity="0.9"/>
+
+  <!-- Eye / center pearl -->
+  <circle cx="200" cy="200" r="12" fill="url(#eyeGrad)" filter="url(#shellGlow)"/>
+  <circle cx="196" cy="196" r="4" fill="rgba(248,250,252,0.6)"/>
+
+  <!-- Radial lines (chamber dividers) -->
+  <g stroke="url(#shellGrad)" stroke-width="1.2" stroke-linecap="round" opacity="0.3">
+    <line x1="200" y1="200" x2="80" y2="140"/>
+    <line x1="200" y1="200" x2="100" y2="260"/>
+    <line x1="200" y1="200" x2="290" y2="110"/>
+    <line x1="200" y1="200" x2="310" y2="240"/>
+    <line x1="200" y1="200" x2="200" y2="80"/>
+  </g>
+
+  <!-- Tentacles -->
+  <g stroke="url(#shellGrad)" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6">
+    <path d="M200 330 C190 350 175 370 170 380"/>
+    <path d="M200 330 C200 355 200 375 200 385"/>
+    <path d="M200 330 C210 350 225 370 230 380"/>
+    <path d="M200 325 C220 340 240 355 250 365"/>
+    <path d="M200 325 C180 340 160 355 150 365"/>
+  </g>
+
+  <!-- Subtle particle dots -->
+  <g fill="#4ADE80" opacity="0.3">
+    <circle cx="100" cy="80" r="1.5"/>
+    <circle cx="310" cy="90" r="1"/>
+    <circle cx="340" cy="220" r="1.2"/>
+    <circle cx="60" cy="230" r="0.8"/>
+    <circle cx="120" cy="330" r="1"/>
+    <circle cx="290" cy="310" r="1.5"/>
+    <circle cx="350" cy="160" r="0.8"/>
+    <circle cx="50" cy="170" r="1"/>
+  </g>
+</svg>
